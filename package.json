@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "cy:test": "cypress run",
+    "cy:test:mobile": "cypress run --config viewportWidth=410 viewportHeight=860",
+    "cy:test:basic": "cypress run --spec 'cypress/e2e/basic/**/*.cy.js'"
   },
   "keywords": [],
   "author": "",
